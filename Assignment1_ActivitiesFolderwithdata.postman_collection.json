@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "863717cc-5ead-4aa0-a546-57019c0cfaf2",
+		"name": "Assignment1_ActivitiesFolderwithdata",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32768462"
+	},
+	"item": [
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "PostActivities",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"title\": \"string\",\r\n  \"dueDate\": \"2024-02-07T05:49:34.118Z\",\r\n  \"completed\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fakerestapi.azurewebsites.net/api/v1/Activities",
+							"protocol": "https",
+							"host": [
+								"fakerestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Activities"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Put",
+			"item": [
+				{
+					"name": "PutActivities",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"title\": \"string\",\r\n  \"dueDate\": \"2024-02-07T06:03:04.313Z\",\r\n  \"completed\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fakerestapi.azurewebsites.net/api/v1/Activities/11",
+							"protocol": "https",
+							"host": [
+								"fakerestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Activities",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
