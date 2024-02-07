@@ -7,6 +7,115 @@
 	},
 	"item": [
 		{
+			"name": "Put",
+			"item": [
+				{
+					"name": "PutAuthorsId",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": {{id}},\r\n  \"idBook\": {{idBook}},\r\n  \"firstName\": \"{{firstName}}\",\r\n  \"lastName\": \"{{lastName}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fakerestapi.azurewebsites.net/api/v1/Authors/12?id=id&idBook=idBook&firstName=firstName&lastName=lastName",
+							"protocol": "https",
+							"host": [
+								"fakerestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Authors",
+								"12"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "id"
+								},
+								{
+									"key": "idBook",
+									"value": "idBook"
+								},
+								{
+									"key": "firstName",
+									"value": "firstName"
+								},
+								{
+									"key": "lastName",
+									"value": "lastName"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "PostAuthors",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": {{id}},\r\n  \"idBook\": {{idBook}},\r\n  \"firstName\": \"{{firstName}}\",\r\n  \"lastName\": \"{{lastName}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fakerestapi.azurewebsites.net/api/v1/Authors?id=id&idBook=idBook&firstName=firstName&lastName=lastName",
+							"protocol": "https",
+							"host": [
+								"fakerestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Authors"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "id"
+								},
+								{
+									"key": "idBook",
+									"value": "idBook"
+								},
+								{
+									"key": "firstName",
+									"value": "firstName"
+								},
+								{
+									"key": "lastName",
+									"value": "lastName"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "GetAuthors",
 			"event": [
 				{
@@ -57,56 +166,6 @@
 			"response": []
 		},
 		{
-			"name": "PutAuthorsId",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"id\": {{id}},\r\n  \"idBook\": {{idBook}},\r\n  \"firstName\": \"{{firstName}}\",\r\n  \"lastName\": \"{{lastName}}\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "https://fakerestapi.azurewebsites.net/api/v1/Authors/12?id=id&idBook=idBook&firstName=firstName&lastName=lastName",
-					"protocol": "https",
-					"host": [
-						"fakerestapi",
-						"azurewebsites",
-						"net"
-					],
-					"path": [
-						"api",
-						"v1",
-						"Authors",
-						"12"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "id"
-						},
-						{
-							"key": "idBook",
-							"value": "idBook"
-						},
-						{
-							"key": "firstName",
-							"value": "firstName"
-						},
-						{
-							"key": "lastName",
-							"value": "lastName"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "GetAuthorsIdBook",
 			"request": {
 				"method": "GET",
@@ -149,55 +208,6 @@
 						"v1",
 						"Authors",
 						"3"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "PostAuthors",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"id\": {{id}},\r\n  \"idBook\": {{idBook}},\r\n  \"firstName\": \"{{firstName}}\",\r\n  \"lastName\": \"{{lastName}}\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "https://fakerestapi.azurewebsites.net/api/v1/Authors?id=id&idBook=idBook&firstName=firstName&lastName=lastName",
-					"protocol": "https",
-					"host": [
-						"fakerestapi",
-						"azurewebsites",
-						"net"
-					],
-					"path": [
-						"api",
-						"v1",
-						"Authors"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "id"
-						},
-						{
-							"key": "idBook",
-							"value": "idBook"
-						},
-						{
-							"key": "firstName",
-							"value": "firstName"
-						},
-						{
-							"key": "lastName",
-							"value": "lastName"
-						}
 					]
 				}
 			},
